@@ -64,7 +64,7 @@ main_page_head = '''
             background-color: #232b41;
             cursor: pointer;
         }
-        
+
         .movie-tile h2 {
             position: absolute;
             width: 86%;
@@ -87,6 +87,21 @@ main_page_head = '''
              left: -5%;
             -webkit-transition: all .5s ease-in-out; 
             transition: all .5s ease-in-out;     
+        }
+        
+        .movie-tile img{
+            width: auto;
+            height: 100%;
+            padding-bottom: 20px;
+            -webkit-transition: transform .5s ease-in-out; 
+            transition: transform .5s ease-in-out;
+        }
+        .movie-tile:hover img {
+            -ms-transform: scale(1.1); /* IE 9 */
+            -webkit-transform: scale(1.1); /* Safari */
+            transform: scale(1.1);
+            -webkit-transition: transform .5s ease-in-out; 
+            transition: transform .5s ease-in-out;    
         }
     </style>
     <script type="text/javascript" charset="utf-8">
