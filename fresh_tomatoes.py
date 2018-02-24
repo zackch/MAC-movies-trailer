@@ -64,7 +64,6 @@ main_page_head = '''
             background-color: #232b41;
             cursor: pointer;
         }
-
         .movie-tile h2 {
             position: absolute;
             width: 86%;
@@ -88,7 +87,6 @@ main_page_head = '''
             -webkit-transition: all .5s ease-in-out; 
             transition: all .5s ease-in-out;     
         }
-
         .movie-tile img{
             width: auto;
             height: 100%;
@@ -103,8 +101,6 @@ main_page_head = '''
             -webkit-transition: transform .5s ease-in-out; 
             transition: transform .5s ease-in-out;    
         }
-        
-        
         .movie-tile p {
             color: #d6d8dc;
             width: 85%;
@@ -126,6 +122,44 @@ main_page_head = '''
              left: 0;
              top:135px;
         }
+        .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+           /* ScrollBar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+         /* Track */
+        ::-webkit-scrollbar-track {
+            background: #232b41;
+
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #131723;
+            border: 1px solid #3c3a65; 
+            border-radius: 5px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0f121d; 
+        }
+        @media (min-width: 1200px){
+            .container {
+                width: 1120px;
+            }}
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
