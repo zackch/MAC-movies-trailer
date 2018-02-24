@@ -48,7 +48,22 @@ main_page_head = '''
             width: 100%;
             height: 100%;
         }
-        
+        .movie-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+            height: 350px;
+            overflow: hidden;
+            width: 250px;
+            text-align: center;
+            margin-right:15px;
+            position: relative;
+            background-size: cover;
+            box-shadow: 0 0 10px black;
+        }
+        .movie-tile:hover {
+            background-color: #232b41;
+            cursor: pointer;
+        }
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
