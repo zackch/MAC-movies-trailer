@@ -64,6 +64,30 @@ main_page_head = '''
             background-color: #232b41;
             cursor: pointer;
         }
+        
+        .movie-tile h2 {
+            position: absolute;
+            width: 86%;
+            color: #d6d8dc;
+            top: 5px;
+            font-size: 22px;
+            z-index:10;
+            padding: 5px;
+            text-shadow: 0 0 10px #010102;
+            left: 0%;
+            box-shadow: 0 0 10px black;
+            margin-left: 7%;
+            background-color: #181729;
+            -webkit-transition: all .5s ease-in-out; 
+            transition: all .5s ease-in-out; 
+       }
+        .movie-tile:hover h2 {      
+            top: 80px;
+            width: 95%;
+             left: -5%;
+            -webkit-transition: all .5s ease-in-out; 
+            transition: all .5s ease-in-out;     
+        }
     </style>
     <script type="text/javascript" charset="utf-8">
         // Pause the video when the modal is closed
