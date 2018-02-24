@@ -88,7 +88,7 @@ main_page_head = '''
             -webkit-transition: all .5s ease-in-out; 
             transition: all .5s ease-in-out;     
         }
-        
+
         .movie-tile img{
             width: auto;
             height: 100%;
@@ -102,6 +102,29 @@ main_page_head = '''
             transform: scale(1.1);
             -webkit-transition: transform .5s ease-in-out; 
             transition: transform .5s ease-in-out;    
+        }
+        
+        
+        .movie-tile p {
+            color: #d6d8dc;
+            width: 85%;
+            height: 60%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            position: absolute;
+            top: 400px;
+            left: 17px;
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+            opacity: .9;
+            background-color: #181729;
+            -webkit-transition: all .5s ease-in-out; 
+            transition: all .5s ease-in-out;
+        }
+        .movie-tile:hover p{
+             width:100%;
+             left: 0;
+             top:135px;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
